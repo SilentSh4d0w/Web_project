@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoRedes</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">TecnoRedes</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#" class="nav__links" onclick="menu()">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links" onclick="curso()">Cursos</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links" onclick="contactos()">Contactos</a>
+                </li>
+
+                <img src="./img/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./img/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Formación en Teleinformática</h1>
+            <p class="hero__paragraph">Desarrolla tus conocimientos en sistemas de transmisión, electrónica abierta y
+                redes. Capacítate para enfrentar los retos tecnológicos del futuro.</p>
+            <a href="#" class="cta" onclick="curso()">Empieza ahora</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">¿Sobre que puedes aprender en esta web?</h2>
+            <p class="about__paragraph">En esta web aprenderás sobre los fundamentos de la teleinformática, transmisión
+                de datos, electrónica de código abierto y hardware libre. Desde los conceptos básicos hasta aplicaciones
+                avanzadas, te guiarás por proyectos prácticos y sistemas colaborativos que te prepararán para enfrentar
+                los desafíos del mundo tecnológico actual.</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./img/chip.svg" class="about__icon">
+                    <h3 class="about__title">Electrónica de Código Abierto</h3>
+                    <p class="about__paragraph">Descubre cómo la electrónica de código abierto te permite conectar
+                        hardware y software para crear soluciones tecnológicas personalizadas.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./img/datos.svg" class="about__icon">
+                    <h3 class="about__title">Transmisión de Datos</h3>
+                    <p class="about__paragraph">Aprende cómo funciona la transmisión de datos, optimizando el uso del
+                        ancho de banda y mejorando la velocidad en diferentes tipos de redes.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./img/cloud.svg" class="about__icon">
+                    <h3 class="about__title">Plataformas Virtuales de Conexión</h3>
+                    <p class="about__paragraph">Conoce cómo las plataformas virtuales permiten la colaboración en tiempo
+                        real, facilitando proyectos de trabajo y aprendizaje a distancia.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledge__texts">
+                    <h2 class="subtitle">Colaboración sin Límites: Trabaja de manera remota y segura</h2>
+                    <p class="knowledge__paragraph">Las plataformas virtuales de conexión te permiten colaborar de forma
+                        segura y eficiente, sin importar las distancias. Aprende a implementar soluciones de
+                        teleinformática que faciliten la cooperación en proyectos distribuidos.</p>
+                    <a href="#" class="cta">Comienza ahora</a>
+                </div>
+                <figure class="knowledge__picture">
+                    <img src="./img/Mac.png" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="price container">
+            <h2 class="subtitle">¡Elige tu plan de aprendizaje!</h2>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name">Plan Básico</p>
+                    <h3 class="price__price">Gratis</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Transmisión de datos (simplex, half-duplex, full-duplex)</p>
+                        <p class="price__features">Electrónica de código abierto: introducción y hardware básico</p>
+                        <p class="price__features">Introducción a plataformas virtuales de conexión</p>
+                    </div>
+
+                    <a href="#" class="price__cta" onclick="curso()">Empieza ahora</a>
+                </div>
+
+                <div class="price__element price__element--best">
+                    <p class="price__name">Plan Intermedio</p>
+                    <h3 class="price__price">$10.400/mes</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Medios de transmisión y sistemas punto a punto</p>
+                        <p class="price__features">Hardware libre: control remoto y tarjetas de datos</p>
+                        <p class="price__features">Integración de plataformas colaborativas</p>
+                    </div>
+
+                    <a href="#" class="price__cta" onclick="location.href='pago/PI.html'">Empieza ahora</a>
+                </div>
+
+                <div class="price__element">
+                    <p class="price__name">Plan Profesional</p>
+                    <h3 class="price__price">$15.600/mes</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Sistemas de control avanzados con hardware libre</p>
+                        <p class="price__features">Redes y protocolos: Lonworks y plataformas de control</p>
+                        <p class="price__features">Proyectos en transmisión de datos y automatización</p>
+                    </div>
+
+                    <a href="#" class="price__cta" onclick="location.href='pago/PP.html'">Empieza ahora</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="./img/arrowleft.svg" class="testimony__arrow" id="before">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Sistemas de Control y Automatización</h2>
+                        <p class="testimony__review">Aprende a implementar sistemas de control automático y remoto,
+                            utilizando microcontroladores, autómatas programables y plataformas de comunicación
+                            avanzadas.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./img/brazo.png" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Redes y Protocolos de Comunicación</h2>
+                        <p class="testimony__review">Explora los principales protocolos de comunicación, como Lonworks,
+                            y aprende a construir redes eficientes para transmitir información en entornos industriales
+                            y colaborativos.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./img/conexiones.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Señales y Procesamiento de Datos</h2>
+                        <p class="testimony__review">Sumérgete en el análisis de señales, tanto periódicas como
+                            aperiódicas, y aprende a aplicar el teorema de muestreo de Nyquist y de Shannon para
+                            optimizar la transmisión de datos.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./img/osciloscopio.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Desarrollo con Hardware Libre</h2>
+                        <p class="testimony__review">Adéntrate en el mundo del hardware libre y aprende a construir
+                            sistemas de control remoto, redes Lonworks, y a integrar sensores y actuadores en tus
+                            proyectos.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./img/microchip.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+
+                <img src="./img/arrowright.svg" class="testimony__arrow" id="next">
+            </div>
+
+            <section class="questions container">
+                <h2 class="subtitle">Preguntas frecuentes</h2>
+                <p class="questions__paragraph">Sobre el Curso Introductorio a Teleinformatica.</p>
+
+                <section class="questions__container">
+                    <article class="questions__padding">
+                        <div class="questions__answer">
+                            <h3 class="questions__title">¿Qué es la teleinformática y para qué se utiliza?
+                                <span class="questions__arrow">
+                                    <img src="./img/arrow.svg" class="questions__img">
+                                </span>
+                            </h3>
+
+                            <p class="questions__show">La teleinformática es la disciplina que combina
+                                telecomunicaciones e informática, facilitando la transmisión y el procesamiento de datos
+                                a través de redes. Se utiliza para gestionar comunicaciones digitales, sistemas en red y
+                                el control de información entre dispositivos.</p>
+                        </div>
+                    </article>
+
+                    <article class="questions__padding">
+                        <div class="questions__answer">
+                            <h3 class="questions__title">¿Cuáles son los tipos de transmisión?
+                                <span class="questions__arrow">
+                                    <img src="./img/arrow.svg" class="questions__img">
+                                </span>
+                            </h3>
+
+                            <p class="questions__show">Existen tres tipos principales de transmisión de datos: simplex
+                                (unidireccional), half-duplex (bidireccional pero alternado) y full-duplex
+                                (bidireccional simultáneo). Cada uno se adapta a diferentes necesidades de comunicación.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="questions__padding">
+                        <div class="questions__answer">
+                            <h3 class="questions__title">¿Qué aprenderé en este curso?
+                                <span class="questions__arrow">
+                                    <img src="./img/arrow.svg" class="questions__img">
+                                </span>
+                            </h3>
+
+                            <p class="questions__show"> En este curso aprenderás sobre transmisión de datos, incluyendo
+                                los diferentes tipos de transmisión (simplex, half-duplex, full-duplex), así como la
+                                electrónica de código abierto, hardware libre, y plataformas virtuales de conexión.
+                                También explorarás sistemas de control remoto, redes y protocolos, y realizarás
+                                proyectos prácticos para aplicar lo aprendido.</p>
+                        </div>
+                    </article>
+
+                    <article class="questions__padding">
+                        <div class="questions__answer">
+                            <h3 class="questions__title">¿Qué es el hardware libre y cómo se aplica en teleinformática?
+                                <span class="questions__arrow">
+                                    <img src="./img/arrow.svg" class="questions__img">
+                                </span>
+                            </h3>
+
+                            <p class="questions__show">El hardware libre permite diseñar y modificar dispositivos con
+                                acceso abierto a sus especificaciones. En teleinformática, se aplica para desarrollar
+                                sistemas personalizados de control remoto, sensores y redes colaborativas, integrando
+                                hardware y software.</p>
+                        </div>
+                    </article>
+
+                    <article class="questions__padding">
+                        <div class="questions__answer">
+                            <h3 class="questions__title">¿Qué es una plataforma virtual de conexión y cómo funciona?
+                                <span class="questions__arrow">
+                                    <img src="./img/arrow.svg" class="questions__img">
+                                </span>
+                            </h3>
+
+                            <p class="questions__show">Una plataforma virtual de conexión permite la colaboración y el
+                                intercambio de información entre usuarios a través de redes. Facilita la interacción en
+                                tiempo real, configuraciones remotas y el trabajo en proyectos compartidos.</p>
+                        </div>
+                    </article>
+
+                    <article class="questions__padding">
+                        <div class="questions__answer">
+                            <h3 class="questions__title">¿Qué beneficios ofrece la transmisión de datos sincrónica y
+                                asincrónica?
+                                <span class="questions__arrow">
+                                    <img src="./img/arrow.svg" class="questions__img">
+                                </span>
+                            </h3>
+
+                            <p class="questions__show">La transmisión sincrónica es más eficiente para datos continuos,
+                                ya que se sincroniza con el reloj del sistema, mientras que la transmisión asincrónica
+                                es ideal para datos intermitentes, ya que no requiere sincronización constante, siendo
+                                más flexible en ciertas aplicaciones.</p>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="questions__offer">
+                    <h2 class="subtitle">¿Estás listo para dominar la teleinformática y las redes de comunicación?</h2>
+                    <p class="questions__copy">Comienza tu formación en teleinformática con cursos diseñados para
+                        enseñarte transmisión de datos, electrónica de código abierto y sistemas de control. Desde lo
+                        básico hasta niveles avanzados, aprenderás a integrar plataformas de conexión y redes
+                        colaborativas. ¡Da el primer paso y transforma tus habilidades técnicas hoy mismo!</p>
+                    <a href="#" class="cta">Aprende ahora</a>
+                </section>
+            </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">TecnoRedes</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <h3 class="footer__copyright">TecnoRedes &copy; 2024 | Todos los derechos reservados | Términos y
+                condiciones</h3>
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/curso.js"></script>
+    <script src="./js/nosotros.js"></script>
+
+</body>
+
+</html>
